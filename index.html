@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aceituno Coming Soon</title>
+  <!-- Google Fonts: Chewy -->
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body {
+      height: 100%;
+      /* ensure gradient covers full page */
+      margin: 0;
+      font-family: 'Chewy', cursive;
+      background: linear-gradient(to bottom, #009639, #dff5e1);
+    }
+
+    body {
+      min-height: 100vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    /* Decorative blurred blobs */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .blob1 {
+      width: 400px;
+      height: 400px;
+      background-color: #009639;
+      top: 15%;
+      left: 5%;
+    }
+
+    .blob2 {
+      width: 500px;
+      height: 500px;
+      background-color: #ffffff;
+      top: 50%;
+      left: 65%;
+    }
+
+    .image-container {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s;
+    }
+
+    .image-container:hover {
+      transform: translateY(-7px);
+    }
+
+    img {
+      width: 450px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+    }
+
+    .title {
+      font-size: 80px;
+      margin-top: 25px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .subtitle {
+      font-size: 36px;
+      margin-top: 15px;
+      color: #006f2c;
+      text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Decorative blobs -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <div class="image-container">
+    <img src="images/aceituno_icon.png" alt="Aceituno">
+  </div>
+
+  <div class="title">Aceituno</div>
+  <div class="subtitle">Fresh, Fun, and Almost Here!</div>
+
+</body>
+
+</html>
